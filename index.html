@@ -1,109 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Shourya</title>
-	<style>
-        
-		body {
-			background-color: #fff;
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.container {
-			margin: 0 auto;
-			max-width: 1200px;
-		}
-		h1 {
-			color: #333;
-			font-size: 36px;
-			margin-bottom: 20px;
-			text-align: center;
-			margin-bottom: 20px;
-		}
-		.gallery {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			margin-top: 20px;
-		}
-		.gallery img {
-			height: 200px;
-			margin: 10px;
-			object-fit: cover;
-			width: 200px;
-		}
-		.template3 {
-			background-color: #f2f2f2;
-			border: 1px solid #ccc;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-			margin-bottom: 10%;
-           margin-top: 30%;
-			padding: 20px;
-			animation: fadein 2s;
-		}
-		.header {
-      background-color: #333;
-      color: #fff;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      padding: 10px 20px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1;
-    }
+    <title>Shourya</title>
+    <style>
+        body {
+            background-color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-    .header h3 {
-      margin: 0;
-      margin-left: 5px;
-    }
+        .container {
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 0 20px; /* Added padding to keep content away from edges */
+        }
 
-    .header a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 50px;
-    }
-		.header img {
-			height: 50px;
-			width: 50px;
-		}
-		
-		.footer {
-			background-color: #333;
-			color: #fff;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: center;
-			padding: 10px 20px;
-			position: fixed;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			z-index: 1;
-		}
-		.footer p {
-			margin: 10px;
-		}
-		.footer a {
-			color: #fff;
-			margin-left: 20px;
-			text-decoration: none;
-		}
-		.footer a:hover {
-			text-decoration: underline;
-		}
-		@keyframes fadein {
-			from { opacity: 0; }
-			to   { opacity: 1; }
-		}
-	</style>
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.2em;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            height: auto;
+            max-width: 100%;
+            margin: 10px;
+            object-fit: cover;
+        }
+
+        .template3 {
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10%;
+            margin-top: 30%;
+            padding: 20px;
+            animation: fadein 2s;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; /* Updated to space-between to push content to center */
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        .header h3 {
+            margin: 0;
+            margin-left: 5px;
+        }
+
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .header img {
+            height: auto;
+            max-width: 50px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        .footer p {
+            margin: 10px;
+            font-size: 1em;
+        }
+
+        .footer a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .header a {
+                margin-left: 10px;
+            }
+
+            .footer p {
+                font-size: 0.8em;
+            }
+
+            .footer a {
+                margin-left: 10px;
+            }
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
 	<div class="container">
